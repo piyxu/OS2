@@ -105,7 +105,6 @@ Transcripts for every command run are persisted under `cli/logs/<timestamp>.json
 ## 10. Additional References
 - Capability limits – [`docs/CapabilityLimits.toml`](CapabilityLimits.toml)
 - Milestone history – [`docs/project_journey.md`](project_journey.md)
-- Localised pointer – [`docs/yol_hikayesi.md`](yol_hikayesi.md)
 - Rust microkernel – [`rust/os2-kernel/`](../rust/os2-kernel/)
 - Deterministic shell – [`cli/`](../cli/)
 
