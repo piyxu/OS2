@@ -1,0 +1,25 @@
+{
+  "reviewers": [
+    "alice",
+    "bob"
+  ],
+  "policies": [
+    {
+      "name": "low-score-review",
+      "required_tags": [
+        "flag:failure"
+      ],
+      "score_below": 0.6,
+      "action": "require_review"
+    },
+    {
+      "name": "block-critical-failure",
+      "required_tags": [
+        "flag:failure",
+        "tag:critical"
+      ],
+      "score_below": 0.3,
+      "action": "block"
+    }
+  ]
+}

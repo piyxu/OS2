@@ -1,0 +1,14 @@
+{
+  "name": "os2nile-tiny-llm",
+  "provider": "github",
+  "url": "https://raw.githubusercontent.com/huggingface/transformers/main/tests/fixtures/test_sentencepiece.model",
+  "sha256": "8dfd1eae4522281b1b839eab877a791befec7a1663a41c814c77d9c89c748f2d",
+  "token_cost": 500,
+  "artifact": "test_sentencepiece.model",
+  "capability": "cap.model.os2nile-tiny-llm",
+  "metadata": {
+    "description": "Test sentencepiece model fixture used as a lightweight stand-in for LLM inference validation.",
+    "source": "huggingface-transformers-fixtures",
+    "size_bytes": 253154
+  }
+}

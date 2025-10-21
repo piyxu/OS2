@@ -1,0 +1,17 @@
+{
+  "name": "sample-module",
+  "token_id": "default",
+  "signature_algorithm": "hmac-sha256",
+  "signature": "0ef4f6208c49b4a42eb1b9505e90d77741d1f34613d2f94a47e82bb4256e81c6",
+  "commands": [
+    {
+      "name": "greet",
+      "summary": "Emit a greeting",
+      "usage": "greet [name]",
+      "capabilities": [
+        "basic"
+      ],
+      "response": "Hello {args}!"
+    }
+  ]
+}
