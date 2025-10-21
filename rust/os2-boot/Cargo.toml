@@ -1,0 +1,23 @@
+[package]
+name = "os2-boot"
+version = "0.1.0"
+edition = "2021"
+authors = ["PIYXU OS2 Contributors"]
+license = "GPL-3.0-only"
+publish = false
+
+[dependencies]
+bootloader = "0.9"
+spin = "0.9"
+uart_16550 = "0.3"
+x86_64 = "0.14"
+
+[package.metadata.bootimage]
+build-command = ["build", "-Zbuild-std=core,compiler_builtins", "-Zbuild-std-features=compiler-builtins-mem"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+

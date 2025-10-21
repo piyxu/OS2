@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "os2-boot",
+    "os2-kernel"
+]
+resolver = "2"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

@@ -1,0 +1,74 @@
+{
+  "seed": 123,
+  "capabilities": [
+    {
+      "name": "planner",
+      "limits": {
+        "max_invocations": 10,
+        "max_tokens": 200
+      }
+    },
+    {
+      "name": "reflect",
+      "limits": {
+        "max_invocations": 5,
+        "max_tokens": 50
+      }
+    }
+  ],
+  "resource_limits": {
+    "cpu_time": 24,
+    "tokens": 16
+  },
+  "tokens": [
+    {
+      "priority": 20,
+      "cost": 5,
+      "kind": "Reason",
+      "capability": "planner",
+      "payload": {
+        "actions": [
+          {
+            "type": "emit",
+            "label": "plan",
+            "detail": {
+              "goal": "draft-plan"
+            }
+          },
+          {
+            "type": "checkpoint",
+            "label": "planner_state",
+            "state": {
+              "status": "recorded"
+            }
+          }
+        ]
+      },
+      "resources": {
+        "cpu_time": 6,
+        "tokens": 6
+      }
+    },
+    {
+      "priority": 15,
+      "cost": 2,
+      "kind": "Reflect",
+      "capability": "reflect",
+      "payload": {
+        "actions": [
+          {
+            "type": "emit",
+            "label": "reflect",
+            "detail": {
+              "summary": "analysis"
+            }
+          }
+        ]
+      },
+      "resources": {
+        "cpu_time": 3,
+        "tokens": 2
+      }
+    }
+  ]
+}

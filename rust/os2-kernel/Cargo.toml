@@ -1,0 +1,22 @@
+[package]
+name = "os2-kernel"
+version = "0.1.0"
+edition = "2024"
+description = "Deterministic microkernel core for the PIYXU OS2 0.1.0 version operating system"
+license = "GPL-3.0-only"
+authors = ["PIYXU OS2 Contributors"]
+
+[dependencies]
+anyhow = "1"
+rand = { version = "0.8", features = ["std", "std_rng"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+pyo3 = { version = "0.21", features = ["auto-initialize"] }
+ed25519-dalek = { version = "2", default-features = false, features = ["std"] }
+serde_bytes = "0.11"
+sha2 = "0.10"
+wasmi = { version = "0.32", default-features = false, features = ["std"] }
+
+[dev-dependencies]
+wat = "1"

@@ -1,0 +1,41 @@
+# Capability limit policy template for PIYXU OS2
+#
+# Copy this file to `CapabilityLimits.local.toml` and adjust the numeric
+# limits according to your deployment constraints. Values represent the
+# maximum budget granted to tokens that inherit the respective policy.
+
+[default]
+# Maximum CPU scheduler time (in milliseconds) allotted per token slice.
+cpu_time_ms = 500
+# Maximum resident memory allocated to a sandboxed interpreter (in bytes).
+memory_bytes = 67108864
+# Maximum outbound network allowance (in bytes). Set to `0` to disable.
+network_bytes = 0
+# Maximum language-model tokens an agent may consume in a single run.
+token_budget = 200
+
+[capability."io.write"]
+cpu_time_ms = 250
+memory_bytes = 33554432
+network_bytes = 0
+token_budget = 50
+
+[capability."io.network"]
+# A stricter profile for networked capabilities. Combine with `--safe`
+# to block I/O entirely.
+cpu_time_ms = 200
+memory_bytes = 16777216
+network_bytes = 65536
+token_budget = 40
+
+[profile."batch.analysis"]
+cpu_time_ms = 1500
+memory_bytes = 134217728
+network_bytes = 4096
+token_budget = 400
+
+[profile."interactive.shell"]
+cpu_time_ms = 600
+memory_bytes = 50331648
+network_bytes = 0
+token_budget = 120

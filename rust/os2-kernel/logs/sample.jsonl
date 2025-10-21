@@ -1,0 +1,9 @@
+{"detail":{"context_hash":"","cost":5,"dependencies":[],"goal":null,"granted_capabilities":[],"kind":"Reason","priority":20,"resource_request":{"cpu_time":6,"memory_bytes":0,"network_bytes":0,"tokens":6}},"kind":"scheduled","timestamp":1,"token_id":0}
+{"detail":{"context_hash":"","cost":2,"dependencies":[],"goal":null,"granted_capabilities":[],"kind":"Reflect","priority":15,"resource_request":{"cpu_time":3,"memory_bytes":0,"network_bytes":0,"tokens":2}},"kind":"scheduled","timestamp":2,"token_id":1}
+{"detail":{"capability_handle":0,"capability_name":"planner","invocations":1,"resources":{"requested":{"cpu_time":6,"memory_bytes":0,"network_bytes":0,"tokens":6},"usage":{"cpu":{"consumed":6,"limit":24},"memory":{"consumed":0,"limit":null},"network":{"consumed":0,"limit":null},"tokens":{"consumed":6,"limit":16}}},"tokens_consumed":5,"tokens_total":5},"kind":"started","timestamp":3,"token_id":0}
+{"detail":{"goal":"draft-plan"},"kind":"custom","label":"plan","timestamp":4,"token_id":0}
+{"detail":{"snapshot":0},"kind":"snapshot_created","timestamp":5,"token_id":0}
+{"detail":null,"kind":"completed","timestamp":6,"token_id":0}
+{"detail":{"capability_handle":1,"capability_name":"reflect","invocations":1,"resources":{"requested":{"cpu_time":3,"memory_bytes":0,"network_bytes":0,"tokens":2},"usage":{"cpu":{"consumed":9,"limit":24},"memory":{"consumed":0,"limit":null},"network":{"consumed":0,"limit":null},"tokens":{"consumed":8,"limit":16}}},"tokens_consumed":2,"tokens_total":2},"kind":"started","timestamp":7,"token_id":1}
+{"detail":{"summary":"analysis"},"kind":"custom","label":"reflect","timestamp":8,"token_id":1}
+{"detail":null,"kind":"completed","timestamp":9,"token_id":1}
