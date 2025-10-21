@@ -27,7 +27,6 @@
 7. Keep repository contributions text-only—avoid adding binary artifacts anywhere in source control. Use `make clean` (or `cargo clean`) to remove local build products and `__pycache__` directories before committing.
 
 ## Maintenance Tips
-- Güncel ilerlemeyi [docs/yol_hikayesi.md](yol_hikayesi.md) üzerinden takip edip yeni faz notlarını aynı belgeye ekleyin.
 - Record new operational commands in `docs/command_interface.md` when expanding shell capabilities; mirror them in this quick reference.
 - Document kernel evolution milestones in `docs/kernel_protocol.md` and related design notes under `docs/`.
 - Seal every entropy capture by recording the snapshot digest alongside the Roken Assembly beacon in the ledger notes; replay tools now verify this link automatically.
