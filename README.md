@@ -1,4 +1,4 @@
-#⚠️ Notice: The installation guide and deterministic system currently contain errors. Please do not use the current version until these issues are fixed.
+⚠️ # Notice: The installation guide and deterministic system currently contain errors. Please do not use the current version until these issues are fixed.
 
 # OS2 – A Microkernel Playground for AI Agents
 
