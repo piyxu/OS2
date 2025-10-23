@@ -1,3 +1,4 @@
+⚠️ Notice: The installation guide and deterministic system currently contain errors. Please continue using the current version until these issues are fixed.
 # OS2 – A Microkernel Playground for AI Agents
 
 OS2 is a hobby project that acts as a microkernel-inspired operating system within your existing environment. Instead of trying to replace your desktop OS, it provides a safe playground where AI agents can experiment with deterministic scheduling, snapshots, and capability-governed tools without risking the host machine. If enough curious builders gather around the idea, we’ll keep evolving it together and build a shared community space.
